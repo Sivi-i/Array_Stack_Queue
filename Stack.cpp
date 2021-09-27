@@ -76,7 +76,7 @@ void Stack <T>::pop (void)
 
 	//RESPONSE: Changed from creating a Copy Array to moving each element -1 indexes
 	//using the Aggregated Array's set method. Furthermore, after each element has been
-	//moved, the resize method shorters the size of the Stack.
+	//moved, the resize method shortens the size of the Stack.
     
 	for (int i = 0; i < arr.size()-1; i++) {
 		arr.set(i, arr.get(i+1));
